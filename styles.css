@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+}
+
+main {
+    max-width: 384px; 
+    height: 85vh;
+    border: 1px solid white;
+    aspect-ratio: 384 / 611;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    text-align: center;
+    margin: 35px auto 10px;
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.profile__image {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.profile__name {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.profile__residence {
+    font-size: .9rem;
+    color: #C4F82A;
+}
+
+.profile__description {
+    padding-top: 1.2rem;
+    margin-bottom: 1.7rem;
+    letter-spacing: 1.12px;
+    font-weight: 100;
+    color: hsl(0,0%,70%);
+}
+
+button {
+    border: 0;
+    border-radius: 10px;
+    width: 90%;
+    background-color: hsl(0, 0%, 20%); 
+    font-weight: 700;
+    letter-spacing: .7px;
+    padding: 18px 0;
+    margin-bottom: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: orange;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+
+button:hover {
+    background-color: #C4F82A;
+    color: black;
+}
+
+
+
