@@ -18,8 +18,6 @@ body {
 
 main {
     max-width: 384px; 
-    height: 85vh;
-    border: 1px solid white;
     aspect-ratio: 384 / 611;
     background-color: hsl(0, 0%, 8%);
 }
