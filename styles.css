@@ -60,7 +60,8 @@ main {                                 /* flex-direction: column is required to 
 .profile__links {}                      /* This serves mainly to make the code more readable.*/
     
 
-.button {                               /* The .button class is self-explanatory.*/
+.button {      
+    text-decoration: none;              /* The .button class is self-explanatory.*/
     text-align: center;
     border: 0;
     border-radius: 10px;
