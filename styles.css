@@ -7,8 +7,8 @@ html {
     padding: 0;
 }
 
-body {
-    display: flex;
+body {                                /* Using display: flex to center the body */
+    display: flex;                    /* in the middle of the viewport.*/
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -19,14 +19,13 @@ body {
     background-color: black;
 }
 
-main {
-    flex-direction: column;
+main {                                 /* flex-direction: column is required to columnize */
+    flex-direction: column;            /* the elements within the body. */
     width: 385px; 
-    /* aspect-ratio: 384 / 611; */
     background-color: hsl(0, 0%, 8%);
 }
 
-.profile {
+.profile {                             /* Using the BEM method for class naming. */ 
     text-align: center;
     margin: 35px auto 10px;
     padding: 0 1.5rem;
@@ -58,7 +57,11 @@ main {
     color: hsl(0,0%,70%);
 }
 
-button {
+.profile__links {}                      /* This serves mainly to make the code more readable.*/
+    
+
+.button {                               /* The .button class is self-explanatory.*/
+    text-align: center;
     border: 0;
     border-radius: 10px;
     width: 80%;
@@ -72,13 +75,13 @@ button {
     cursor: pointer;
 }
 
-button:active {
+.button:active {
     background-color: orange;
     transition-duration: 1s;
     transition-property: background-color;
 }
 
-button:hover {
+.button:hover {
     background-color: #C4F82A;
     color: black;
 }
