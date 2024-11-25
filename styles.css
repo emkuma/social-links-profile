@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: 0 !important;
 }
 
 html {
@@ -7,7 +12,7 @@ html {
     padding: 0;
 }
 
-body {                                /* Using display: flex to center the body */
+body {                                /* Using display: flex; center the body */
     display: flex;                    /* in the middle of the viewport.*/
     justify-content: center;
     align-items: center;
@@ -15,11 +20,11 @@ body {                                /* Using display: flex to center the body 
     font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: 600;
-    color: white;
     background-color: black;
+    color: white;
 }
 
-main {                                 /* flex-direction: column is required to columnize */
+main {                                 /* flex-direction: column; vertically align */
     flex-direction: column;            /* the elements within the body. */
     width: 385px; 
     background-color: hsl(0, 0%, 8%);
@@ -52,40 +57,37 @@ main {                                 /* flex-direction: column is required to 
 .profile__description {
     padding-top: 1.2rem;
     margin-bottom: 1.7rem;
-    letter-spacing: 1.12px;
+    letter-spacing: 1px;
     font-weight: 100;
     color: hsl(0,0%,70%);
 }
 
-.profile__links {}                      /* This serves mainly to make the code more readable.*/
-    
+.profile__links { }           /* Enhance readability. Also for refactoring if needed.*/
 
-.button {      
-    text-decoration: none;              /* The .button class is self-explanatory.*/
+a {
+    display: block;
+}
+    
+.button {                    
     text-align: center;
-    border: 0;
+    border: none;
     border-radius: 10px;
-    width: 80%;
+    width: 92%;
+    color: hsl(0, 0%, 90%);
     background-color: hsl(0, 0%, 20%); 
     font-weight: 700;
     letter-spacing: .7px;
     padding: 18px 0;
-    margin-left: 2.2rem;
+    margin-left: .7rem;
     margin-bottom: 1.4rem;
-    color: white;
     cursor: pointer;
 }
 
-.button:active {
-    background-color: orange;
-    transition-duration: 1s;
-    transition-property: background-color;
-}
-
-.button:hover {
+a:hover {
     background-color: #C4F82A;
     color: black;
 }
+
 
 
 
